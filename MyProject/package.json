@@ -1,0 +1,39 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "my project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "BDD",
+    "cucumber"
+  ],
+  "author": "MoFe",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.5.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.7.0",
+    "multiple-cucumber-html-reporter": "^3.5.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/pro",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/Report-Test",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "charts": true,
+    "reportPageTitle": "My Test Report",
+    "embeddedScreenshots": true,
+    "inlineAssets": true
+  }
+}

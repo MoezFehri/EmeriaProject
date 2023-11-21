@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "search",
+    "line": 1,
+    "id": "search",
+    "tags": [],
+    "uri": "search.feature",
+    "elements": [
+      {
+        "id": "search;rechercher-un-bien",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "rechercher un bien",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open welcome page",
+            "result": {
+              "status": "passed",
+              "duration": 6084000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I put a department",
+            "result": {
+              "status": "passed",
+              "duration": 1733000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see results",
+            "result": {
+              "status": "passed",
+              "duration": 1061000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
